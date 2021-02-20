@@ -1,8 +1,6 @@
-# DOBCalculator
-
 # DOBCalculator Android App
 
-Repository for the DOBCalculator Android App for performing experiments with the [Pocket Science Lab](https://DOBCalculator.io) open-hardware platform.
+Repository for the DOBCalculator Android App for Calculating your age in number of days.
 
 [![Build Status](https://travis-ci.org/fossasia/DOBCalculator-android.svg?branch=development)](https://travis-ci.org/fossasia/DOBCalculator-android)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dd728d91bb5743ff916c16c1251f8dd5)](https://www.codacy.com/app/praveenkumar103/DOBCalculator-android?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fossasia/DOBCalculator-android&amp;utm_campaign=Badge_Grade)
@@ -15,12 +13,9 @@ Repository for the DOBCalculator Android App for performing experiments with the
 
 This repository holds the Android App for performing experiments with [DOBCalculator](https://DOBCalculator.io/). DOBCalculator is a tiny pocket science lab that provides an array of equipment for doing science and engineering experiments. It can function like an oscilloscope, waveform generator, frequency counter, programmable voltage and current source and also as a data logger. Our website is at https://DOBCalculator.io
 
-<a href="https://play.google.com/store/apps/details?id=io.DOBCalculator"><img alt="Get it on Google Play" height="80" src="/docs/images/playstore_badge.png"></a>
-<a href="https://f-droid.org/app/io.DOBCalculator"><img alt="Get it on F-Droid" height="80" src="/docs/images/fdroid_badge.png"></a>
-
 ## Buy
 
-* You can get a Pocket Science Lab device from the [FOSSASIA Shop](https://fossasia.com).
+* You can get a DOBCalculator for free from the [FOSSASIA Shop](https://fossasia.com).
 * More resellers are listed on the [DOBCalculator website](https://DOBCalculator.io/shop/).
 
 ## Communication
@@ -45,9 +40,6 @@ This repository holds the Android App for performing experiments with [DOBCalcul
 
 ## Video Demo
 - [DOBCalculator Android App Overview](https://www.youtube.com/watch?v=JJfsF0b8M8k).
-- [Observing Sound Waveforms Using DOBCalculator Device](https://www.youtube.com/watch?v=5bxDd1PiOMQ).
-- [Real-time Sensor Data Logging Using Pocket Science Lab](https://www.youtube.com/watch?v=_A8h6o-UcNo).
-- [Generating and Observing Waveforms Using Pocket Science Lab](https://www.youtube.com/watch?v=Ua9_OCR4p8Y).
 
 ## Features
 |   **Feature**          | **Description**                                                   | **Status**         |
@@ -117,10 +109,7 @@ If you built your own hardware, change VendorID and/or ProductID in [Communicati
 
 ### Permissions Required
 
-1. Record_Audio : It is required for oscilloscope to accept inputs from the phone inbuilt microphone. You can find its implementation in [AudioJack.java](https://github.com/fossasia/DOBCalculator-android/blob/development/app/src/main/java/io/DOBCalculator/others/AudioJack.java).
-2. Access_Fine_Location and Internet : It is required for use in lux meter and compass to get the coordinates for tagging the data on the map. You can find its implementation in [GPSLogger.java](https://github.com/fossasia/DOBCalculator-android/blob/development/app/src/main/java/io/DOBCalculator/others/GPSLogger.java).
-3. Write_External_Storage : It is required for storing log files from instruments that can be transferred out for future analysis.
-4. Read_External_Storage : While writing logs in the storage, [CSVLogger.java](https://github.com/fossasia/DOBCalculator-android/blob/development/app/src/main/java/io/DOBCalculator/others/CSVLogger.java) first checks whether there is any CSVLogger directory exist or not and that require this read permission.  
+1. No permission required for this app.  
 
 ## Setup to use DOBCalculator with Android App
 To use DOBCalculator device with Android, you simply need an OTG cable, an Android Device with USB Host feature enabled ( most modern phones have OTG support ) and DOBCalculator Android App. Connect DOBCalculator device to Android Phone via OTG cable. Rest is handled by App itself.
@@ -172,7 +161,7 @@ Despite any reason, follow the steps given below to squash all commits into one 
 
 ### Branch Policy
 
-We have the following branches
+We will be having the following branches in sometime
 * **development** All development goes on in this branch. If you're making a contribution, you are supposed to make a pull request to _development_. Make sure it passes a build check on Travis.
 * **master** This contains the stable code. After significant features/bugfixes are accumulated on development, we move it to master.
 * **apk** This branch contains automatically generated apk file for testing.
@@ -181,11 +170,8 @@ We have the following branches
 
 Please try to follow the mentioned guidelines while writing and submitting your code as it makes easier for the reviewer and other developers to understand.
 
- * While naming the layout files, ensure that the convention followed is (activity/fragment) _ (name).xml like ```activity_oscilloscope.xml``` , ```fragment_control_main.xml``` .
- * Name the views and widgets defined in the layout files as (viewtype/widget) _ (fragment/activity name) _ (no. in the file) like ```spinner_channel_select_la1``` , ```button_activity_oscilloscope1``` .
- * The activity/fragment file name corresponding to the layout files should be named as                       (activity/fragment name)(activity/fragment).java like ```ChannelsParameterFragment.java``` corresponding to the layout file ```fragment_channels_parameter.xml``` .
- * The corresponding widgets for buttons, textboxes, checkboxes etc. in activity files should be named as (viewtype/widget)(fragment/activity name)(no. in the file) like ```spinnerChannelSelect1``` corresponding to ```spinner_channel_select1``` .
-
+ * While naming the layout files, ensure that the naming convention is followed .
+ 
 ## Developers
 
 ### Maintainers
@@ -199,4 +185,4 @@ The project is maintained by
 
 ## License
 
-This project is currently licensed under the Apache License 2.0. A copy of [LICENSE](LICENSE) is to be present along with the source code. To obtain the software under a different license, please contact FOSSASIA.
+This project is currently licensed under the Apache License 2.0. A copy of [LICENSE](LICENSE) is to be present along with the source code. To obtain the software under a different license, please contact Gunish.
