@@ -15,18 +15,18 @@ This repository holds the Android App for performing experiments with [DOBCalcul
 
 ## Buy
 
-* You can get a DOBCalculator for free from the [FOSSASIA Shop](https://fossasia.com).
+* You can get a DOBCalculator for free from the [Gunish's Shop](https://fossasia.com).
 * More resellers are listed on the [DOBCalculator website](https://DOBCalculator.io/shop/).
 
 ## Communication
 
-* The DOBCalculator [chat channel is on Gitter](https://gitter.im/fossasia/DOBCalculator).
-* Please also join us on the [DOBCalculator Mailing List](https://groups.google.com/forum/#!forum/DOBCalculator-fossasia).
+* The DOBCalculator [chat channel on Gitter is not yet set up](https://gitter.im/fossasia/DOBCalculator).
+* Please also join us on the [DOBCalculator Mailing List hasn't been created](https://groups.google.com/forum/#!forum/DOBCalculator-fossasia).
 
 ## Roadmap
  - [x] First we need to get communication between Android App and DOBCalculator working.
- - [x] Implement Applications and expose DOBCalculator Hardware functionality to the user.
- - [ ] Implement wireless connectivity
+ - [x] Select your date of birth.
+ - [ ] wireless connectivity is not needed
 
 ## Screenshots
 
@@ -39,7 +39,7 @@ This repository holds the Android App for performing experiments with [DOBCalcul
  
 
 ## Video Demo
-- [DOBCalculator Android App Overview](https://www.youtube.com/watch?v=JJfsF0b8M8k).
+- [Vedio set up is not done Right now](https://www.youtube.com/watch?v=JJfsF0b8M8k).
 
 ## Features
 |   **Feature**          | **Description**                                                   | **Status**         |
@@ -48,71 +48,6 @@ This repository holds the Android App for performing experiments with [DOBCalcul
 | Date Picker            | Exposes DOBCalculator instruments like date                  | :heavy_check_mark: |
 
 
-## How to set up the Android app in your development environment
-
-### Application Flavors
-
-There is 1 flavors (build variants) of DOBCalculator Android application.
-
-1. #### Play Store Flavor
-  - Play Store flavor uses Google Maps to display location stored in logs in Data logger.
-
-### Development Setup
-
-Before you begin, you should already have the Android Studio SDK downloaded and set up correctly. You can find a guide on how to do this here: [Setting up Android Studio](http://developer.android.com/sdk/installing/index.html?pkg=studio)
-
-### Setting up the Android Project
-For setting up the DOBCalculator Android project you may follow any of the two methods listed below, that is, you may download the repository zip file or you may directly clone the repository to Android Studio.
-
-### By downloading the zip file
-
-1. Download the DOBCalculator project source. You can do this either by forking and cloning the repository (recommended if you plan on pushing changes) or by downloading it as a ZIP file and extracting it.
-
-2. Open Android Studio, you will see a **Welcome to Android** window. Under Quick Start, select _Import Project (Eclipse ADT, Gradle, etc.)To debug over Wi-Fi follow the steps given in this [Blog](http://blog.fossasia.org/android-app-debugging-over-wifi-fo).
-
-* **Note :**
-If you built your own hardware, change VendorID and/or ProductID in [CommunicationHandler.java](blob/master/app/src/main/java/io/DOBCalculator/communication/CommunicationHandler.java).
-
-### By direct cloning
-
-
-1. Open Android Studio, you will see a **Welcome to Android** window. Under Quick Start, select "check out project from version control".
-
-2. Select git from the drop down menu that appeared.
-
-3. Go to the repository and click clone or download button.
-
-4. From the dropdown that appeared, copy the link.
-
-5. Paste the URL that you copied and press clone.
-
-6. Android studio should now begin building the project with gradle.
-
-7. Once this process is complete and Android Studio opens, check the Console for any build errors.
-
- - _Note:_ If you receive a Gradle sync error titled, "failed to find ...", you should click on the link below the error message (if available) that says _Install missing platform(s) and sync project_ and allow Android studio to fetch you what is missing.
-
-8. Once all build errors have been resolved, you should be all set to build the app and test it.
-
-9. To Build the app, go to _Build>Make Project_ (or alternatively press the Make Project icon in the toolbar).
-
-10.  If the app was built successfully, you can test it by running it on either a real device or an emulated one by going to _Run>Run 'app'_ or pressing the Run icon in the toolbar.
-
-If you want build apk only, go to Build>Build apk and apk would be build and directory where apk is generated would be prompted by Android Studio.
-
-You can't debug the usual way as DOBCalculator device is connected to micro-USB port through OTG cable. So Android Device is not connected to PC through USB cable.
-
-To debug over Wi-Fi follow the steps given in this [Blog](http://blog.fossasia.org/android-app-debugging-over-wifi-for-DOBCalculator/). 
-
-* **Note :**
-If you built your own hardware, change VendorID and/or ProductID in [CommunicationHandler.java](https://github.com/fossasia/DOBCalculator-android/blob/master/app/src/main/java/io/DOBCalculator/communication/CommunicationHandler.java).
-
-### Permissions Required
-
-1. No permission required for this app.  
-
-## Setup to use DOBCalculator with Android App
-To use DOBCalculator device with Android, you simply need an OTG cable, an Android Device with USB Host feature enabled ( most modern phones have OTG support ) and DOBCalculator Android App. Connect DOBCalculator device to Android Phone via OTG cable. Rest is handled by App itself.
 
 ## Contributions Best Practices
 
