@@ -77,12 +77,12 @@ class MainActivity : AppCompatActivity() {
                  * And the seconds can be converted to minutes by dividing it by 60.
                  * So now in the selected date into minutes.
                  */
-                val selectedDateToMinutes = theDate!!.time / 60000
+                val selectedDateToMinutes = theDate!!.time / (60000*1440)
 
                 // Here we have parsed the current date with the Date Formatter which is used above.
                 val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
                 // Current date in to minutes.
-                val currentDateToMinutes = currentDate!!.time / 60000
+                val currentDateToMinutes = currentDate!!.time / (60000 * 1440)
 
                 /**
                  * Now to get the difference into minutes.
